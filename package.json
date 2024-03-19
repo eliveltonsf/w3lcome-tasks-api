@@ -1,9 +1,12 @@
 {
-  "name": "server",
+  "name": "w3lcome-tasks-api",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "vercel-build": "echo hello"
   },
   "license": "MIT",
   "dependencies": {
